@@ -38,6 +38,14 @@ namespace cal{
     private:
         int day;
     };
+    class Week{
+    public:
+        int operator [](int index){
+            return days[index];
+        }
+    private:
+        int days[7];
+    };
     extern int calGetDaysInMonth(int month, int year){
         switch(month){
             case 9:
@@ -53,6 +61,9 @@ namespace cal{
             default:
                 return 31;
         }
+    }
+    extern float calGetVersion(){
+        return 1.0f;
     }
 }
 #endif

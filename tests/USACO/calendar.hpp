@@ -54,5 +54,8 @@ namespace cal{
                 return 31;
         }
     }
+    extern float calGetVersion(){
+        return 1.0f;
+    }
 }
 #endif
